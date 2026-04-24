@@ -1,10 +1,16 @@
-console.log("Welcome to Abel Chiriboga's portfolio 🚀");
+function showMessage() {
+  const message = document.getElementById("message");
+  message.textContent = "Thanks for visiting my portfolio 🚀 You can contact me through GitHub!";
+}
 
-// pequeño efecto
-document.addEventListener("DOMContentLoaded", () => {
-    document.body.style.opacity = 0;
-    setTimeout(() => {
-        document.body.style.transition = "opacity 1s";
-        document.body.style.opacity = 1;
-    }, 100);
+const cards = document.querySelectorAll(".card, .project-card");
+
+cards.forEach(card => {
+  card.addEventListener("mousemove", () => {
+    card.style.transform = "scale(1.02)";
+  });
+
+  card.addEventListener("mouseleave", () => {
+    card.style.transform = "scale(1)";
+  });
 });

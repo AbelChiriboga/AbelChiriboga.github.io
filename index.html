@@ -1,52 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abel Chiriboga | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abel Chiriboga | Futuristic Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <header>
-        <h1>👋 Hi, I'm Abel Chiriboga</h1>
-        <p>Software Engineering Student | Developer</p>
-    </header>
+  <nav class="navbar">
+    <h2>Abel.dev</h2>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+    </div>
+  </nav>
 
-    <section class="about">
-        <h2>👨‍💻 About Me</h2>
-        <p>
-            I am a 4th semester Software Engineering student at Universidad Técnica de Ambato.
-            I am passionate about programming and technology.
-        </p>
-        <ul>
-            <li>🎂 20 years old</li>
-            <li>📍 Ambato, Ecuador</li>
-        </ul>
-    </section>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span>Abel Chiriboga</span></h1>
+      <p>Software Engineering Student | Java | Python | JavaScript | C#</p>
 
-    <section class="skills">
-        <h2>🚀 Skills</h2>
-        <ul>
-            <li>Java</li>
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>C#</li>
-        </ul>
-    </section>
+      <div class="buttons">
+        <a class="btn primary" href="https://github.com/AbelChiriboga" target="_blank">View GitHub</a>
+        <button class="btn secondary" onclick="showMessage()">Contact Me</button>
+      </div>
 
-    <section class="projects">
-        <h2>📂 Projects</h2>
-        <p>Check my GitHub for my latest projects 👇</p>
-        <a href="https://github.com/AbelChiriboga" target="_blank">
-            Visit my GitHub
-        </a>
-    </section>
+      <p id="message"></p>
+    </div>
+  </header>
 
-    <footer>
-        <p>© 2026 Abel Chiriboga</p>
-    </footer>
+  <section id="about" class="card">
+    <h2>👨‍💻 About Me</h2>
+    <p>
+      I am a 4th semester Software Engineering student at Universidad Técnica de Ambato.
+      I am 20 years old and I live in Ambato, Ecuador. I enjoy sports, video games,
+      programming, and learning new technologies.
+    </p>
+  </section>
 
-    <script src="script.js"></script>
+  <section id="skills" class="card">
+    <h2>🚀 Tech Skills</h2>
+    <div class="skills-grid">
+      <button>Java</button>
+      <button>Python</button>
+      <button>JavaScript</button>
+      <button>C#</button>
+      <button>Git</button>
+      <button>GitHub</button>
+    </div>
+  </section>
+
+  <section id="projects" class="card">
+    <h2>📂 Projects</h2>
+
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Library System</h3>
+        <p>Project developed using Java and object-oriented programming.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Web Portfolio</h3>
+        <p>Personal website published with GitHub Pages.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Database Practice</h3>
+        <p>SQL exercises using Oracle and Access.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Abel Chiriboga | Built with GitHub Pages</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
